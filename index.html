@@ -2,39 +2,24 @@
 <html lang="it">
 <head>
 <style>
-  /* Sfondo sfumato animato con colori soft */
-  body {
-    background: linear-gradient(270deg, #a8d0ff, #d3eaff, #a8d0ff);
-    background-size: 600% 600%;
-    animation: backgroundFade 20s ease infinite;
-    margin: 0;
-    padding: 0;
+  .light-frame {
+    border: 4px solid transparent;
+    border-radius: 10px;
+    padding: 10px;
+    animation: pulse-border 2s infinite alternate;
+    display: inline-block;
   }
 
-  @keyframes backgroundFade {
-    0% {
-      background-position: 0% 50%;
+  @keyframes pulse-border {
+    from {
+      box-shadow: 0 0 5px #99ccff;
     }
-    50% {
-      background-position: 100% 50%;
+    to {
+      box-shadow: 0 0 15px #66aaff, 0 0 30px #66aaff;
     }
-    100% {
-      background-position: 0% 50%;
-    }
-  }
-
-  /* Titolo con dimensioni contenute e ombra luminosa */
-  h1 {
-    font-size: 2.5rem;
-    color: #003366;
-    text-align: center;
-    text-shadow:
-      0 0 5px #99ccff,
-      0 0 10px #99ccff,
-      0 0 15px #66aaff;
-    margin-bottom: 1rem;
   }
 </style>
+
 
 
     
